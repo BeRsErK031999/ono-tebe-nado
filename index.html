@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
+  <body class="content-section">
     <header class="header content-section">
         <div class="header__menu">
+          <nav class="nav">
             <ul class="header__links-list">
-              <li class="header__links-list-item header__links-list-item_Nobullit">
+              <li class="header__links-list-item header__links-list-item_no-bullit">
                 <a href="#" class="header__link">главная</a>
               </li>
               <li class="header__links-list-item">
@@ -23,43 +24,35 @@
                 <a href="#" class="header__link">об аукционе</a>
               </li>
             </ul>
-          <div>
+          </nav>
           <a>
             <img class="header__img" 
             src="/images/logo-black.svg"
             alt="Лого проекта"/>
           </a>
-        </div>
-        <div class="header__adress">
+        <div class="header__address">
           <address class="address">
-            <p>
               <a href="tel:+99995555555">+9 999 555 5555</a>
-            </p>
-            <p>
               <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-            </p>
-            <p>наб. Принсенграхт 263-265, Амстердам</p>
+              <p>наб. Принсенграхт 263-265, Амстердам</p>
           </address>
         </div>
       </div>
     </header>
-    <main class="content-section">
-      <section> 
-      <div class="cover">
+    <main>
+      <section class="cover"> 
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="aligned-text_left cover__title-span">о<span class="letter-spacing-space">но</span></span>
-          <span class="aligned-text_center cover__title-span"><span class="letter-spacing">те</span><span class="letter-spacing-space">бе</span></span>
-          <span class="aligned-text_right cover__title-span"><span class="letter-spacing-space">н</span><span>ад</span><span class="no-letter-spacing">о</span></span>
+          <span class="aligned-text aligned-text_left cover__title-span">о<span class="letter-spacing-space">но</span></span>
+          <span class="aligned-text aligned-text_center cover__title-span"><span class="letter-spacing">те</span><span class="letter-spacing-space">бе</span></span>
+          <span class="aligned-text aligned-text_right cover__title-span"><span class="letter-spacing-space">н</span><span>ад</span><span class="no-letter-spacing">о</span></span>
         </h1>
         <div class="cover__description">
           <p class="cover__description-text cover__description-text-space">Аукцион вещей, в которые никто не верил</p>
-          <button class="cover__description-text a_button">Сделать ставку</button>
+          <button class="bet-button">Сделать ставку</button>
         </div>
-      </div>
       </section>
-      <section class="content-section">
-        <div class="lots">
+      <section class="lots">
           <h2 class="lots__heading">Лоты</h2>
           <ul class="lots__card-list">
             <li class="lots__card-list-item">
@@ -104,15 +97,13 @@
               посмотреть больше
             </a>
           </div>
-        </div>
       </section>
-      <section class="content-section">
-        <div class="about">
+      <section class="about">
           <div class="about__logo">
             <img src="/images/logo-white.svg" class="about__logo-image" alt="Логотип проекта"/>
           </div>
           <div>
-            <h4 class="about__title">Об аукционе</h4>
+            <h2 class="about__title">Об аукционе</h2>
             <div class="about__column">
               <p class="about__text">
                 Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. 
@@ -126,14 +117,13 @@
               </p>
             </div>
           </div>
-        </div>
       </section>
     </main>
-    <footer class="content-section">
+    <footer class="footer-section">
       <div class="footer">
         <address class="address footer__address">
-          <p><a href="tel:+99995555555" target="_blank">+9 999 555 5555</a></p>
-          <p><a href="mailto:info@sobaka.ge" target="_blank">info@sobaka.ge</a></p>
+          <a href="tel:+99995555555" target="_blank">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" target="_blank">info@sobaka.ge</a>
           <p>наб. Принсенграхт 263-265, Амстердам</p>
         </address>
           <nav class="footer__menu">
@@ -144,7 +134,7 @@
             </ul>
           </nav>
         <ul class="footer__links">
-          <li class>
+          <li>
             <a href="https://youtube.com">
               <img src="/images/yt.svg" alt="Ютуб" class="footer__links-icon"/>
             </a>
